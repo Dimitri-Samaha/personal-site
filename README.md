@@ -1,18 +1,18 @@
 # Personal Site
 
-The Django backend of an old personal portfolio site (originally hosted as `DimitriSamaha.github.io`; the Jekyll/GitHub Pages configuration has been removed — this is just the Django app that used to live alongside it).
+This is the Django backend of an old personal portfolio site, originally hosted as `DimitriSamaha.github.io`. Its Jekyll and GitHub Pages configuration has been removed; what remains is just the Django app that used to live alongside it.
 
 ## Apps
-- **`main`** — a single landing-page app (`main/templates/main/index.html`).
+- **`main`**: a single landing page app (`main/templates/main/index.html`).
 
 ## Tech stack
-Python, Django, MySQL.
+Python, Django, and MySQL.
 
 ## Requirements
 ```
 pip install django mysqlclient
 ```
-`django_website02/settings.py` is configured to use MySQL directly (`ENGINE: django.db.backends.mysql`, database `django_website02`, host `127.0.0.1:3306`, user `root` / password `root`). A local MySQL server with those credentials and a `django_website02` database is required before `migrate` will succeed.
+`django_website02/settings.py` is configured to use MySQL directly (engine `django.db.backends.mysql`, database `django_website02`, host `127.0.0.1:3306`, user `root`, password `root`). A local MySQL server with those credentials and a `django_website02` database is required before `migrate` will succeed.
 
 ## Running it
 ```
